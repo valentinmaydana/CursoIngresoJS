@@ -13,13 +13,22 @@ function mostrarAumento()
  sueldo = txtIdImporte.value;
  sueldo = parseInt(sueldo);
 
- descuento = (sueldo * 0.25); 
+  descuento = prompt("Ingrese su descuento ");
+  descuento =parseInt(descuento);
 
- resultado = sueldo - descuento;
+  descuento = ( sueldo * descuento /100) ; 
+  resultado = sueldo - descuento ;
+ 
+ txtIdResultado.value = resultado ;
 
- txtIdResultado.value = resultado ; 
+ //descuento = (sueldo * 0.25); 
+ //resultado = sueldo - descuento;
+ //txtIdResultado.value = resultado ; 
 
-	
+  
+
+
+
 }
 
 
