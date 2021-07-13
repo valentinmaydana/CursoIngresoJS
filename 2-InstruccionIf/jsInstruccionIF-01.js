@@ -1,6 +1,28 @@
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+	edad = txtIdEdad.value;
+	edad = parseInt(edad)
+	 if(edad == 15)
+	 {
+       alert("niña bonita");
+	 }	
 
-}//FIN DE LA FUNCIÓN
+
+ }
+
+  //FIN DE LA FUNCION 
+
+/* 
+
+if(condicion):  verdadera o falsa
+{
+	codigo....
+}
+.....
+
+Operadores: 
+-aritmeticos: + - * / %
+-relaciones: < > <= >= == !=
+-logicos: y (&&) o (||) no (!)
+*/
