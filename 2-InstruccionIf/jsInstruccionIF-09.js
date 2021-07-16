@@ -9,9 +9,6 @@ function mostrar()
 	alert(numero);
 
 
-
-
-
 }
 
 
