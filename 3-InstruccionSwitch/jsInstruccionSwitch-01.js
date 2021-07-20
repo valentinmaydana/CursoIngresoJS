@@ -1,9 +1,15 @@
 function mostrar()
 {
-	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
+	var mesDelAño;
+	var mensaje;
+
+	mesDelAño= txIdMes.value;
+	
 
 
 
-}//FIN DE LA FUNCIÓN
+}
+
+
+
+//FIN DE LA FUNCIÓN

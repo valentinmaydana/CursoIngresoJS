@@ -13,7 +13,7 @@ ingresos brutos en informar del impuesto con el siguiente mensaje:
  */
 function CalcularPrecio () 
 {
-     var lamparasIngresadas;
+       var lamparasIngresadas;
      lamparasIngresadas = txtIdCantidad.value;
      lamparasIngresadas = parseInt(lamparasIngresadas);
 
@@ -88,9 +88,141 @@ function CalcularPrecio ()
             }
         }
 
-        
+
+        if (precioFinal > 120)
+        {
+            txtIdprecioDescuento.value =
+        }
+          
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* var lamparasIngresadas;
+     lamparasIngresadas = txtIdCantidad.value;
+     lamparasIngresadas = parseInt(lamparasIngresadas);
+
+     var precioFinal;
+     precioFinal = lamparasIngresadas * 35;
+     precioFinal = parseInt(precioFinal);
+
+     var nombreMarca;
+     nombreMarca = Marca.value;  
+
+     switch(lamparasIngresadas)
+     {
+        case ">5"
+        txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.50);
+        break;
+        case 
+
+
+
+     }
+     
+
+
+/*     var lamparasIngresadas;
+     lamparasIngresadas = txtIdCantidad.value;
+     lamparasIngresadas = parseInt(lamparasIngresadas);
+
+     var precioFinal;
+     precioFinal = lamparasIngresadas * 35;
+     precioFinal = parseInt(precioFinal);
+
+     var nombreMarca;
+     nombreMarca = Marca.value;
+
+        if(lamparasIngresadas>5) 
+        {
+         txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.50);
+        }
+
+        else 
+        {
+            if(lamparasIngresadas==5)
+            {    
+                if(nombreMarca=="ArgentinaLuz")
+                {
+                txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.40);
+                }
+                else
+                {
+                    if(nombreMarca !="ArgentinaLuz")
+                    {
+                    txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.30);
+                    }
+                }
+            }
+            else
+            {
+                if(lamparasIngresadas==4)
+                {
+                    if(nombreMarca=="ArgentinaLuz" || nombreMarca=="FelipeLamparas")
+                    {
+                        txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.25); 
+                    }
+                    else
+                    {
+                        if(nombreMarca!="ArgentinaLuz" && nombreMarca!="FelipeLamparas")
+                        {
+                            txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.20);
+                        }
+                    } 
+                }
+                else
+                {
+                    if(lamparasIngresadas==3)
+                    {
+                        if(nombreMarca="ArgentinaLuz")
+                        {
+                          txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.15);  
+                        }
+                        else
+                        {
+                            if(nombreMarca="FelipeLamparas")
+                            {
+                              txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.10);   
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (nombreMarca !="ArgentinaLuz" && nombreMarca!="FelipeLamparas")
+                        {
+                            txtIdprecioDescuento.value = precioFinal -(precioFinal * 0.5);
+                        }
+                    }
+                }    
+            }
+        }
+    var IIBB
+    IIB =  txtIdprecioDescuento.value + ( txtIdprecioDescuento.value * 0.1);
+        alert("Usted pago " + IIBB + " de Ingresos Brutos. ");
+
+
+   */
 // txtIdCantidad
 //Marca
 //txtIdprecioDescuento
