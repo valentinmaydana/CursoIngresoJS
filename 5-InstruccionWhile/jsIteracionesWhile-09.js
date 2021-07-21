@@ -18,32 +18,19 @@ function mostrar()
 		numeroIngresado= prompt("Ingrese un numero: ");
 		numeroIngresado= parseInt(numeroIngresado);
 
-		if(ingresoElPrimerNumero==false)
+		if(ingresoElPrimerNumero> maximo || ingresoElPrimerNumero == false)
 		{
 			maximo=numeroIngresado;
-			minimo=numeroIngresado;
-			ingresoElPrimerNumero = true;
+			
 		}
 		else
 		{
-			if(numeroIngresado > maximo)
+			if(numeroIngresado < minimo || ingresoElPrimerNumero== false)
 			{
 				maximo = numeroIngresado;
 			}
-			else
-			{
-			 	if (numeroIngresado < minimo) 
-				{
-					minimo = numeroIngresado;
-				}
-			}	
-		}
 
 	}
 
 	document.write("Maximo; "+ maximo + "Minimo: " + minimo);
-
-}
-
-/*txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo; */
+} //FIN DE LA FUNCION

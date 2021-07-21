@@ -12,18 +12,92 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
-	//declarar contadores y variables 
-	var respuesta;
 	var numeroIngresado;
-	var sumaNegativos=0;
+	numeroIngresado=parseInt(numeroIngresado);
 
-	respuesta="si";
+	var seguir;
+	seguir = "si";
 
-	while(respuesta=="si")
+	var sumaNegativos;
+	sumaNegativos= 0;
+
+	var sumaPositivos;
+	sumaPositivos= 0;
+
+	var cantidadNegativos;
+	cantidadNegativos=0;
+
+	var cantidadPositivos;
+	cantidadPositivos=0;
+
+	var sumaCeros;
+	sumaCeros = 0;
+
+	var cantidadCeros;
+	cantidadCeros=0;
+
+	var cantidadPares;
+	cantidadPares=0;
+
+	var promedioPositivos;
+	var promedioNegativos;
+
+
+
+	while(seguir == "si")
 	{
-		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		numeroIngresado = prompt("Ingrese un numero: ");
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+		if(numeroIngresado<0)
+		{
+			sumaNegativos= sumaNegativos + numeroIngresado;
+			cantidadNegativos= cantidadNegativos + 1;
+		}
+		else
+		{
+			if(numeroIngresado>0)
+			{
+				sumaPositivos = sumaPositivos + numeroIngresado;
+				cantidadPositivos++;
+			}
+			else
+			{
+				cantidadCeros++;
+			}
+		}
+
+		if(numeroIngresado%2==0)
+		{
+			cantidadPares++;
+		}
+
+
+
+
+		seguir = prompt("Ingresar otro numero? ");
+	}
+if(cantidadNegativos!=0)
+{
+	promedioNegativos = sumaNegativos/cantidadNegativos;
+	document.write("El promedio de los negativos es "+promedioNegativos+ "<br>");
+
+}
+else
+{
+	document.write("El promedio de los negativos no se pudo calcular" + "<br>");
+}
+
+if(cantidadPositivos!=0)
+{
+	promedioPositivos= sumaPositivos/cantidadPositivos;
+	document.write("El promedio de los positivos es "+ promedioPositivos+ "<br>");
+}
+else
+{
+	document.write("El promedio de los positivos no se pudo calcular");
+}
+	
+ document.write(""
+
+
 }//FIN DE LA FUNCIÓN
