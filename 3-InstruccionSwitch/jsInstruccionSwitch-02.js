@@ -13,22 +13,32 @@ MARZO - ABRIL - MAYO - JUNIO -> Otoño "Falta para el invierno"*/
 function mostrar()
 {
 	var mesDelAño;
-	var mensaje;
-	mesDelAño =txtIdMes.value;
+	mesDelAño = txtIdMes.value;
 	
 	switch(mesDelAño)
 	{
-		case "Marzo"
-		case "Abril"
-		case "Mayo"
-		case "Junio"
-			mensaje = "Falta para el invierno. "
-		break;
-		case "Julio"
-		case "Agosto"
-			mensaje = "Abrigate que hace frio" 
-		break;
-		default; "Septiempre" "Octubre" " Noviembre" "Diciembre" 
+		case "Marzo":
+		case "Abril":
+		case "Mayo":
+		case "Junio":
+			alert("Falta para el invierno. ");
+			break;
+
+		case "Julio":
+		case "Agosto":
+			alert("Abrigate que hace frio");
+			break;
+
+		case "Septiempre": 
+		case "Octubre":
+		case "Noviembre": 
+		case "Diciembre":
+		case "Enero":
+		case "Febrero":
+			alert("Ya pasamos el frio, ahora hace calor");
+			break;
+
+
 	}
 
 

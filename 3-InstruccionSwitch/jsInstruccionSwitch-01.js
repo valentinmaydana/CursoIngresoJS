@@ -12,19 +12,17 @@ function mostrar()
 
 	switch(mesDelAño)
 	{
-		case  "Enero"
-			mensaje = "que comiences bien el año!!!." 
-		break;
-		case  "Marzo"
-			mensaje = "a clases!!!."
-		break;
-		case  "Julio"
-			mensaje = "se vienen las vacaciones!!!."
-		break;
-		case  "Diciembre"
-			mensaje = "Felices fiestas!!!."
-		default;
-
+		case "Enero":
+			alert("que comiences bien el año!!!."); 
+			break;
+		case "Marzo":
+			alert("a clases!!!.");
+			break;
+		case "Julio":
+			alert("se vienen las vacaciones!!!.");
+			break;
+		case "Diciembre":
+			alert("Felices fiestas!!!.");
 	}
 }
 

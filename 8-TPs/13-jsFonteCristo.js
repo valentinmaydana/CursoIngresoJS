@@ -9,5 +9,12 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
+ 
+
+
+
+
+
+
  	
 }
